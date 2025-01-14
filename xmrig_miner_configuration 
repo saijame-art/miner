@@ -1,0 +1,33 @@
+Yes, you can use the xmrig miner on Android with Termux. Here's a basic guide on how to do it:
+Prerequisites:
+ * Android Device: Running Android 7 or later.
+ * Termux App: Installed from the Google Play Store.
+ * Basic Linux Command-Line Knowledge: Familiarity with commands like cd, mkdir, git clone, etc.
+Steps:
+ * Update and Upgrade Packages:
+   pkg update && pkg upgrade -y
+
+ * Install Necessary Packages:
+   pkg install git build-essential cmake -y
+
+ * Clone the xmrig Repository:
+   git clone https://github.com/xmrig/xmrig.git
+
+ * Build xmrig:
+   cd xmrig
+mkdir build
+cd build
+cmake .. -DWITH_HWLOC=OFF 
+make -j$(nproc) 
+
+ * Run xmrig:
+   ./xmrig -a <algorithm> -o <pool_address> -u <your_wallet_address> -p <password> 
+
+   * Replace <algorithm>, <pool_address>, <your_wallet_address>, and <password> with the appropriate values. You can find this information on the mining pool's website.
+Important Notes:
+ * Battery Drain: Mining cryptocurrency can significantly drain your device's battery.
+ * Heat Generation: Mining can also generate heat, which can potentially damage your device.
+ * Profitability: The profitability of mining on an Android device is generally low due to limited processing power.
+ * Legal and Ethical Considerations: Ensure that cryptocurrency mining is legal and ethical in your jurisdiction.
+This is a basic guide. For more detailed instructions and advanced configurations, refer to the official xmrig documentation: https://xmrig.com/docs/miner/command-line-options
+By following these steps, you can successfully set up and run the xmrig miner on your Android device using Termux. However, remember to proceed with caution and be mindful of the potential drawbacks mentioned above.
