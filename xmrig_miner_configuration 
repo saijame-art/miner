@@ -31,3 +31,5 @@ Important Notes:
  * Legal and Ethical Considerations: Ensure that cryptocurrency mining is legal and ethical in your jurisdiction.
 This is a basic guide. For more detailed instructions and advanced configurations, refer to the official xmrig documentation: https://xmrig.com/docs/miner/command-line-options
 By following these steps, you can successfully set up and run the xmrig miner on your Android device using Termux. However, remember to proceed with caution and be mindful of the potential drawbacks mentioned above.
+
+./xmrig -a RamdomX -o pool.hashvault.pro:443 -u SaLvdUJexbndcgrN8Jkc7HLC76tMJ9A5CiSk1GKNbAxo5nZP671mtAbXwungu5UpKTCtUMv3WYi6k7fLP1fim5sc5WYLQeoNrEc -p sai
